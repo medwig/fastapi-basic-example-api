@@ -17,4 +17,13 @@ from project root: github/fastapi-basic-example-api
 $ pytest
 ```
 
+### Deploy with Docker:
+```
+$ docker build -t myimage .
+$ docker run -d --name mycontainer -p 80:80 myimage 
+$ docker inspect mycontainer | grep 'IPAddress' 
+
+--> Go to that ip_address/docs in browser
+```
+
 Taken straight from the fantastic docs at https://fastapi.tiangolo.com/tutorial/sql-databases/
