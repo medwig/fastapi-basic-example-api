@@ -3,6 +3,10 @@
 ### Start server:
 `$ uvicorn sql_app.main:app --reload`
 
+**or**
+
+`$ python -m sql_app.main`
+
 ### Access API docs:
 ```
 Go to http://127.0.0.1:8000/docs in browser
